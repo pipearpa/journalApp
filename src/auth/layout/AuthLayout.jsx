@@ -8,7 +8,7 @@ export const AuthLayout = ({ children, title = '' }) => {
             direction="column"
             alignItems="center"
             justifyContest="center"
-            sx={{ minHeight: '100vh', backgroundColor: 'primary.main', padding: 4 }}
+            sx={{ minHeight: '100vh', backgroundColor: 'primary.main', padding: 30 }}
 
         >
             <Grid item
@@ -23,7 +23,7 @@ export const AuthLayout = ({ children, title = '' }) => {
 
 
 
-                <Typography variant='h5' sx={{ mb: 1 }}  ><h1 className=''>{title}</h1></Typography>
+                <Typography variant='h5' sx={{ mb: 1 }}  ><h2 className=''>{title}</h2></Typography>
 
 
                 <p className=''>Bienvenido, Por favor ingresa tus datos.</p>

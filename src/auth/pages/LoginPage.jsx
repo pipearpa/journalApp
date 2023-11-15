@@ -28,16 +28,16 @@ export const LoginPage = () => {
 
             <Grid container spacing={2} sx={{ mb: 2 }} mt={2}>
 
-              <Grid item xs={12} sm={6}>
+              <Grid item xs={12} >
                 <Button variant='contained' fullWidth>
                   Iniciar Sesion
                 </Button>
 
               </Grid>
-              <Grid item xs={12} sm={6}>
+              <Grid item xs={12} >
                 <Button variant='contained' fullWidth>
                   <Google />
-                  <Typography sx={{ ml: 1 }}>Google</Typography>
+                  <Typography sx={{ ml: 1 }}> Google</Typography>
                 </Button>
 
               </Grid>
@@ -45,13 +45,23 @@ export const LoginPage = () => {
 
             </Grid>
 
+
+            
+
+            
+
+            
+            
+            
             <Grid container direction='row' justifyContent='end'>
-              <Link component={RouterLink} color='inherit' to="/auth/register">
+            <Typography sx={{ mr: 1}}>
+              ¿No tienes cuenta?
+            </Typography>
+            <Link component={RouterLink} color='inherit' to="/auth/register">
               Crear una cuenta 
               </Link>
-              
 
-            </Grid>
+              </Grid>
 
 
           </Grid>

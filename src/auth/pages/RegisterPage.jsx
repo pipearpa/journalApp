@@ -48,7 +48,7 @@ export const RegisterPage = () => {
             </Grid>
           </Grid>
 
-          <Grid container direction='row' justifyContent='end'>
+          <Grid container direction='row' justifyContent='end' >
             <Typography sx={{ mr: 1}}>
               ¿Ya tienes cuenta?
             </Typography>
