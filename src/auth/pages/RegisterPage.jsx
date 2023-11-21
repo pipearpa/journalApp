@@ -70,7 +70,7 @@ export const RegisterPage = () => {
     // Usa el componente AuthLayout con un título específico para la página de registro
     <AuthLayout title='Crear una cuenta'>
 
-      <div className="row p-2 mt-2">
+      {/* <div className="row p-2 mt-2">
         <button
           type="button"
           onClick={() => setCargar(true)}
@@ -80,7 +80,7 @@ export const RegisterPage = () => {
         </button>
 
 
-      </div>
+      </div> */}
 
       <form onSubmit={controladorDelEnvio} >
         <Grid container>
@@ -135,7 +135,7 @@ export const RegisterPage = () => {
           <Grid item xs={12} sx={{ mt: 2 }}>
             <TextField
               label="Phone Number"
-              type="number"
+              type="text"
               placeholder="Ingresa Numero"
               fullWidth
               name="phone_number"
@@ -165,7 +165,7 @@ export const RegisterPage = () => {
         </Link>
       </Grid>
 
-      <div>
+      {/* <div>
         {Array.isArray(posts) ? (
           posts.map(post => {
             return (
@@ -191,7 +191,7 @@ export const RegisterPage = () => {
           <p>No hay datos de usuario disponibles</p>
         )
         }
-      </div>
+      </div> */}
 
       
     </AuthLayout>

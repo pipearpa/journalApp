@@ -8,8 +8,10 @@ import { useState, useEffect } from "react";
 
 export const LoginPage = () => {
 
+
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
+ 
 
 
   const ValidarUsuario = async (nombre, password) => {
@@ -17,17 +19,23 @@ export const LoginPage = () => {
       method: "POST",
     });
     if (response.status === 200) {
+     
       alert("inicie sesion");
+      window.location.href = '/';
+      
 
     } else {
       alert("usuario o contraseña incorrecta");
+     
       /*  <Router>
             
               <Routes>
               <Route path="/" component={AppUser} />
               </Routes>
       </Router>*/
+      
     }
+   
   };
 
   const controladorDelEnvio = (e) => {
@@ -36,6 +44,7 @@ export const LoginPage = () => {
   };
 
   return (
+    
     <AuthLayout title='Bienvenido a LookStyle'>
       <form onSubmit={controladorDelEnvio} >
       <Grid container>
