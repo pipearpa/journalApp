@@ -78,10 +78,12 @@ export const LoginPage = () => {
       </form>
 
 
-
+      <Grid container direction='row' justifyContent='end'>
+      <Typography sx={{ mr: 1 }}>¿No tienes cuenta?</Typography>
       <Link component={RouterLink} color='inherit' to="/auth/register">
         Crear una cuenta
       </Link>
+      </Grid>
 
 
     </AuthLayout>
