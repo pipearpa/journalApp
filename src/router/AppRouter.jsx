@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom"
 import { AuthRoutes } from "../auth/routes/AuthRoutes"
-import { JournalRoutes } from "../journal/routes/JournalRoutes"
+import { BarberRoutes } from "../barber/routes/BarberRoutes"
 
 
 export const AppRouter = () => {
@@ -12,9 +12,9 @@ export const AppRouter = () => {
             <Route path="/auth/*" element={<AuthRoutes />} />
 
 
-            {/*journalApp*/}
+            {/*BarberApp*/}
 
-            <Route path="/*" element={ <JournalRoutes /> } />
+            <Route path="/*" element={ <BarberRoutes /> } />
 
 
         </Routes>
